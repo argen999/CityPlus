@@ -9,16 +9,25 @@ public class City implements Summable{
         this.name = name;
     }
 
+
+    public int getPopulation() {
+        return population;
+    }
+
+    public String getName() {
+        return name;
+    }
+
     @Override
     public int add(Summable other) {
         // метод логикасын жазыныз
-        return 0;
+        return getValue() + other.getValue();
     }
 
     @Override
     public int getValue() {
         // метод логикасын жазыныз
-        return 0;
+        return getPopulation();
     }
 
     @Override
